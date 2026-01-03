@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package coffee_shop;
+
+option go_package = "github.com/QuangNV23062004/grpc-example/coffee_shop;coffeeshop";
+
+service CoffeeShopService {
+  rpc GetMenu(MenuRequest) returns (stream MenuResponse){};
+  rpc PlaceOrder(OrderRequest) returns (Receipt){};
+  rpc GetOrderStatus(Receipt) returns (OrderStatus){};
+}
+
+message MenuRequest {}
+
+message OrderRequest{
+    repeated Item items = 1;
+}
+
+message Receipt {
+    string id = 1;
+}
+
+message OrderStatus {
+    string orderId = 1;
+    string status = 2;
+}
+
+message MenuResponse {
+  repeated Item items = 1;
+}
+
+message Item {
+    string id = 1;
+    string name = 2;
+}
