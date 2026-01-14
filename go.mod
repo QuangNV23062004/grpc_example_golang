@@ -1,4 +1,4 @@
-module github.com/QuangNV23062004/grpc-example
+module github.com/QuangNV23062004/grpc_example_golang
 
 go 1.25.4
 

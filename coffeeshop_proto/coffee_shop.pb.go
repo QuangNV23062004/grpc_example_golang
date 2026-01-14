@@ -7,11 +7,12 @@
 package coffeeshop
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -315,7 +316,7 @@ const file_coffee_shop_proto_rawDesc = "" +
 	"\aGetMenu\x12\x18.coffee_shop.MenuRequest\x1a\x19.coffee_shop.MenuResponse\"\x000\x01\x12?\n" +
 	"\n" +
 	"PlaceOrder\x12\x19.coffee_shop.OrderRequest\x1a\x14.coffee_shop.Receipt\"\x00\x12B\n" +
-	"\x0eGetOrderStatus\x12\x14.coffee_shop.Receipt\x1a\x18.coffee_shop.OrderStatus\"\x00B@Z>github.com/QuangNV23062004/grpc-example/coffee_shop;coffeeshopb\x06proto3"
+	"\x0eGetOrderStatus\x12\x14.coffee_shop.Receipt\x1a\x18.coffee_shop.OrderStatus\"\x00B@Z>github.com/QuangNV23062004/grpc_example_golang/coffee_shop;coffeeshopb\x06proto3"
 
 var (
 	file_coffee_shop_proto_rawDescOnce sync.Once

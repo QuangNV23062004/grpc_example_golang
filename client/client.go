@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/QuangNV23062004/grpc-example/coffeeshop_proto"
+	pb "github.com/QuangNV23062004/grpc_example_golang/coffeeshop_proto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

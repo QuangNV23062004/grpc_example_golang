@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package coffee_shop;
 
-option go_package = "github.com/QuangNV23062004/grpc-example/coffee_shop;coffeeshop";
+option go_package = "github.com/QuangNV23062004/grpc_example_golang/coffee_shop;coffeeshop";
 
 service CoffeeShopService {
   rpc GetMenu(MenuRequest) returns (stream MenuResponse){};
